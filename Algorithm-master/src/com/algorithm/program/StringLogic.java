@@ -6,6 +6,20 @@ import java.util.Map;
 import java.util.Set;
 
 public class StringLogic {
+	
+	static void printperm(String str,String ans) {
+		if(str.length() == 0) {
+			System.out.println("combinatin = " + ans+" ");
+			return;
+		}
+		for(int i=0;i<str.length();i++) {
+			char c = str.charAt(i);
+			
+			String res = str.substring(0,i) + str.substring(i+1);
+			printperm(res,ans+c);
+		}
+		
+	}
 
 	public static void main(String[] args) {
 
@@ -51,6 +65,28 @@ public class StringLogic {
 		Arrays.sort(s2);
 		
 		System.out.println("ISAnargam = " + Arrays.equals(s1, s2));
+		
+		
+		//permutation of string
+		String s = "abc";
+		
+		printperm(s,"");
+		
+		
+		
+		Integer n1 = Integer.valueOf(10);
+		Integer n2 = Integer.valueOf(10);
+		if (n1 == n2) {
+			System.out.println("Hiiiiiiiiiiii");
+		}
+
+		int a =15;
+		int b = 12;
+
+		if ( a <= b && a >= b && a != b ) {
+			System.out.println("success");
+		}
+		
 
 	}
 

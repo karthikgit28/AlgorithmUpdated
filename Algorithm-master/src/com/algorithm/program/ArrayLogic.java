@@ -165,7 +165,25 @@ public class ArrayLogic {
 			}
 		}
 		
-
+		
+		//Find missing number
+		int n = 8;
+		int[] n1 = {1,2,3,4,5,7,8};
+		
+		int sumOfNumbers = (n*(n+1))/2;
+		
+		int sums=0;
+		for(int i=0;i<n1.length;i++) {
+			sums = sums + n1[i];
+		}
+		System.out.println("sumOfNumbers number = "+ sumOfNumbers);
+		int missedNumber = sumOfNumbers - sums;
+		System.out.println("Missed number = "+ missedNumber);
+		
+		
+		
+		//Test
+		System.out.println("********* "+111%10);
 
 	}
 
