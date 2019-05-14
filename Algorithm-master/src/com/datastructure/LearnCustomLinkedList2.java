@@ -54,8 +54,6 @@ public class LearnCustomLinkedList2 {
 				return false;
 			}
 		}
-		
-		
 	}
 	
 	public void printNodes() {

@@ -25,13 +25,22 @@ public class StartedClass {
 //		System.out.println("Dequeue element is " + queue.deQueue());
 //		System.out.println("Dequeue element is " + queue.deQueue());
 		
-		CustomLinkedList linked = new CustomLinkedList();
-		linked.insertItem(2);
-		linked.insertItem(3);
-		linked.insertItem(4);
-		linked.insertItem(6);
+//		CustomLinkedList linked = new CustomLinkedList();
+//		linked.insertItem(2);
+//		linked.insertItem(3);
+//		linked.insertItem(4);
+//		linked.insertItem(6);
+//		
+//		linked.printList();
 		
-		linked.printList();
+		BinarySearchTree tree = new BinarySearchTree();
+		tree.add(50);
+		tree.add(25);
+		tree.add(75);
+		tree.add(10);
+		tree.add(30);
+			
+		tree.traverse();
 	}
 
 }
